@@ -46,8 +46,6 @@ OTHER SCRIPTS
 
 delete_project.php : delete project by name
 
-schema.php : load the database schema
-
 util.php : various helper functions
 
 db.php : database helper functions
