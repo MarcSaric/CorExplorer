@@ -2,7 +2,7 @@
 
 $DBUSER = $_SERVER["DBUSER"];
 $DBPASS = $_SERVER["DBPASS"];
-$DB = mysqli_connect("localhost",$DBUSER,$DBPASS,"corex");
+$DB = mysqli_connect($DBHOST,$DBUSER,$DBPASS,"corex");
 
 if (mysqli_connect_errno())
 {
