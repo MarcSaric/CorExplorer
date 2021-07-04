@@ -1,5 +1,6 @@
 <?php
 
+$DBHOST = $_SERVER["DBHOST"];
 $DBUSER = $_SERVER["DBUSER"];
 $DBPASS = $_SERVER["DBPASS"];
 $DB = mysqli_connect($DBHOST,$DBUSER,$DBPASS,"corex");

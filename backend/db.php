@@ -9,6 +9,11 @@ if (!isset($DBPASS))
 	$DBPASS = (isset($_SERVER["DBPASS"]) ? $_SERVER["DBPASS"] : getenv("DBPASS"));
 }
 
+if (!isset($DBHOST))
+{
+	$DBHOST = (isset($_SERVER["DBHOST"]) ? $_SERVER["DBHOST"] : getenv("DBHOST"));
+}
+
 $DB = mysqli_connect($DBHOST,$DBUSER,$DBPASS,"corex");
 
 if (mysqli_connect_errno())
